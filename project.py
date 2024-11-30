@@ -1,4 +1,5 @@
 # access, modify, slice option available for list .
+
 msg1 :str = "Select the option below : "
 my_list :list = [10, "hello", 3.14, True, "world"]
 
@@ -26,7 +27,6 @@ def slice_function(index):
 
 def main():
 
-
   print(msg1)
   print("1 : For access list item ")
   print("2 : For modify list item ")
@@ -36,7 +36,7 @@ def main():
     user_choice = int(input("Enter a number \"1 to 3\" to execute the programme : "))
     user_index = int(input("Enter a  index to perform action : "))
   except ValueError:
-    print("Invalid input.no 2")
+    print("Invalid input no 1.")
 
   if user_choice == 1:
     access_function(user_index)
@@ -48,7 +48,7 @@ def main():
     slice_function(user_index)
 
   else :
-    print("Invalid Input")
+    print("Invalid Input no 2.")
 
 if __name__ == '__main__':
   main()
